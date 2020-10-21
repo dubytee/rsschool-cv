@@ -6,10 +6,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
     <style>
         .contacts,.achievements, .skills, .occupation, .summary,.code {
-            border-radius: 1%;
+            border-radius: 5px 5px 5px 5px;
             background-color: #363636;
+            box-shadow: 5px 5px 3px #121212;
+            padding: 10px 15px 10px 15px;
+            margin: 20px;
         }
-
+        .header {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 400%;
+        }
         body {
             max-width: 1024px;
             background-color:#282828;
@@ -17,7 +30,7 @@
             margin: auto;
         }
         img {
-            border-radius: 10%;
+            border-radius: 5%;
         }
         p, li, code {
             border-spacing: 0.2em;
@@ -33,8 +46,11 @@
 
 <body>
     <header>
-        <h1 class="name">Antoni Badzei</h1>
-        <img class="picture" src="https://live.staticflickr.com/65535/50507329362_b43952cb0a_c.jpg" width="275" height="275" alt="Antoni Badzei profile picture">
+        <div class="header">
+            <h1 class="name">Antoni Badzei</h1>
+            <img class="picture" src="https://live.staticflickr.com/65535/50507329362_b43952cb0a_c.jpg" width="275" height="275" alt="Antoni Badzei profile picture">
+        </div>
+
         <section class="contacts">
             <h3>Contacts:<br></h3>
             <p>- Personal: +375255220034<br> 
